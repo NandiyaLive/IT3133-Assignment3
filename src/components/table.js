@@ -1,4 +1,4 @@
-const Table = ({ students }) => {
+const Table = ({ students, setStudentIndex }) => {
   return (
     <table border={1}>
       <tr>
@@ -16,7 +16,7 @@ const Table = ({ students }) => {
           <td>{student.course}</td>
           <td>{student.country}</td>
           <td>
-            <button> View</button>
+            <button onClick={() =>setStudentIndex(i)}>View</button>
           </td>
         </tr>
       ))}

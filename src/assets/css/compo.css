@@ -24,6 +24,14 @@
     width: 48%;
     float: right;
 }
+
 .profile{
     width: 75%;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile img {
+    width: 50%;
+    height: auto;
 }

@@ -6,16 +6,18 @@ import { useState } from "react";
 import Profile from "./components/profile";
 
 function App() {
-  const [student, setStudent] = useState(students[0]);
+  const [studentIndex, setStudentIndex] = useState(0);
+
+  console.log(studentIndex);
 
   return (
     <div className="outerDiv">
       <div className="leftDiv">
-        <Table students={students} />
+        <Table students={students} setStudentIndex={setStudentIndex} />
       </div>
 
       <div className="rightDiv">
-        <Profile student={student}/>
+        <Profile student={students[studentIndex]} />
       </div>
     </div>
   );
