@@ -1,11 +1,14 @@
-import { useState } from 'react';
-import './App.css';
+import "./App.css";
 import "./assets/css/compo.css";
+import Table from "./components/table";
+import { students } from "./assets/studentsbd";
 
 function App() {
   return (
     <div className="outerDiv">
-      IT3133
+      <div className="leftDiv">
+        <Table students={students} />
+      </div>
     </div>
   );
 }
