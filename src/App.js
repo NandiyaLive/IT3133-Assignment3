@@ -8,8 +8,6 @@ import Profile from "./components/profile";
 function App() {
   const [studentIndex, setStudentIndex] = useState(0);
 
-  console.log(studentIndex);
-
   return (
     <div className="outerDiv">
       <div className="leftDiv">
